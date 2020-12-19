@@ -1,0 +1,23 @@
+{  
+    "Routes": [  
+        {  
+            "DownstreamPathTemplate": "/weatherforecast",
+            "DownstreamScheme": "http",
+            "UpstreamPathTemplate": "/api/weather",
+            "UpstreamHttpMethod": [ "GET" ],
+            "ServiceName": "weather-service",
+            "LoadBalancerOptions": {
+                "Type": "LeastConnection"
+            }
+        }
+    ],
+    "GlobalConfiguration": {
+        "RequestIdKey": "OcRequestId",
+        "ServiceDiscoveryProvider": {
+            "Scheme": "http",
+            "Host": "localhost",
+            "Port": 8671,
+            "Type": "Eureka"
+        }
+    }
+}  
