@@ -30,7 +30,7 @@ Ocelot Discovery Service using Ocelot Eureka Client and Steeltoe Client
 ### --- How to run ---
 Requirements:
 - Dotnet core 5.0.1
-- Java 1.8
+- Java 15
 
 1. Start Eureka Server
     ```
